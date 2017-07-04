@@ -17,11 +17,11 @@ def get_user_post(insta_username):
            image_name=user_media['data'][0]['id']+'.jpeg'
            image_url=user_media['data'][0]['images']['standard_resolution']['url']
            urllib.urlretrieve(image_url,image_name)
-           print "Your image Has Been Downloaded!"
+           print "Your image Has Been Sucsessfully Downloaded!"
        else:
-           print "There is no recent post"
+           print "Recently No Post Available Here"
     else:
         print 'Status code other than 200 received'
-get_user_post()
+
 
 
