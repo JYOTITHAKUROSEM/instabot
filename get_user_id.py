@@ -1,8 +1,8 @@
 import requests
 from constants import APP_ACCESS_TOKEN,BASE_URL
-insta_username = "sharmatanu9878"
+insta_username = "juhi2494"
 def get_user_id(insta_username):
-    #function logic
+    #function logic Here
     request_url=(BASE_URL +'users/search?q=%s&access_token=%s')%(insta_username,APP_ACCESS_TOKEN)
     print 'GET REQUEST url:%s'%(request_url)
     user_info=requests.get(request_url).json()
