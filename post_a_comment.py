@@ -1,6 +1,7 @@
 import requests
 from constants import APP_ACCESS_TOKEN,BASE_URL
 from get_post_id import get_post_id
+from get_users_post import get_user_post
 def post_a_comment(insta_username):
     media_id=get_post_id(insta_username)
     comment_text=raw_input("Your Comment: ")
