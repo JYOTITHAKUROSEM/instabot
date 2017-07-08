@@ -15,7 +15,7 @@ def self_info():
             print 'User Doesnot Exist!'
     else:
         print 'Status Code Other Then 200 Received'
-self_info()
+#self_info()
 
 
 

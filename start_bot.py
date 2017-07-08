@@ -1,48 +1,40 @@
+from main import *
+#import main file
 def start_bot():
     while True:
         print '\n'
-        print 'Hey! Welcome to instaBot!'
-        print 'Here are your menu options:'
-        print "a.Get your own details\n"
-        print "b.Get details of a user by username\n"
-        print "c.Get your own recent post\n"
-        print "d.Get the recent post of a user by username\n"
-        print "e.Get a list of people who have liked the recent post of a user\n"
-        print "f.Like the recent post of a user\n"
-        print "g.Get a list of comments on the recent post of a user\n"
-        print "h.Make a comment on the recent post of a user\n"
-        print "i.Delete negative comments from the recent post of a user\n"
-        print "j.Exit"
-
-        choice = raw_input("Enter you choice: ")
-        # if choice == "a":
-        #     self_info()
-        # elif choice == "b":
-        #     insta_username = raw_input("Enter the username of the user: ")
-        #     get_user_info(insta_username)
-        # elif choice == "c":
-        #     get_own_post()
-        # elif choice == "d":
-        #     insta_username = raw_input("Enter the username of the user: ")
-        #     get_user_post(insta_username)
-        # elif choice=="e":
-        #    insta_username = raw_input("Enter the username of the user: ")
-        #    get_like_list(insta_username)
-        # elif choice=="f":
-        #    insta_username = raw_input("Enter the username of the user: ")
-        #    like_a_post(insta_username)
-        # elif choice=="g":
-        #    insta_username = raw_input("Enter the username of the user: ")
-        #    get_comment_list(insta_username)
-        # elif choice=="h":
-        #    insta_username = raw_input("Enter the username of the user: ")
-        #    post_a_comment(insta_username)
-        # elif choice=="i":
-        #    insta_username = raw_input("Enter the username of the user: ")
-        #    delete_negative_comment(insta_username)
-        # elif choice == "j":
-        #     exit()
-        # else:
-        #     print "wrong choice"
-
+        print 'Hey! Welcome to InstaBot!'
+        print 'choose menu options:'
+        print "1.Get your own details\n"
+        print "2.Get details of a user by username\n"
+        print "3.Get your own recent post\n"
+        print "4.Get the recent post of a user by username\n"
+        print "5.Like the recent post of a user\n"
+        print "6.Make a comment on the recent post of a user\n"
+        print "7.Delete negative comments from the recent post of a user\n"
+        print "8.Exit"
+        choice = raw_input("Enter your choice: ")
+        if choice == "1":
+            self_info()
+        elif choice == "2":
+            insta_username = raw_input("Enter the username of the user: ")
+            get_user_info(insta_username)
+        elif choice == "3":
+             get_own_post()
+        elif choice == "4":
+             insta_username = raw_input("Enter the username of the user: ")
+             get_user_post(insta_username)
+        elif choice=="5":
+            insta_username = raw_input("Enter the username of the user: ")
+            like_a_post(insta_username)
+        elif choice=="6":
+            insta_username = raw_input("Enter the username of the user: ")
+            post_a_comment(insta_username)
+        elif choice=="7":
+           insta_username = raw_input("Enter the username of the user: ")
+           delete_negative_comment(insta_username)
+        elif choice == "8":
+            exit()
+        else:
+             print "Your choose wrong choice plz choose again......."
 start_bot()

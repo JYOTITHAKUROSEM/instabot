@@ -12,4 +12,4 @@ def post_a_comment(insta_username):
         print "sucessfully added a new comment"
     else:
         print "Sorry You Are Unable To add Comment. plz.. Try Again!"
-post_a_comment(insta_username="sharmatanu9878")
+#post_a_comment(insta_username="sharmatanu9878")

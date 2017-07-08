@@ -22,6 +22,6 @@ def get_user_post (insta_username):
             print "Recently No Post Available Here"
     else:
         print 'Status code other than 200 received'
-get_user_post(insta_username="sharmatanu9878")
+#get_user_post(insta_username="sharmatanu9878")
 
 

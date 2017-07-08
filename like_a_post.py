@@ -11,4 +11,4 @@ def like_a_post(insta_username):
         print "like was successfull"
     else:
         print "Your like was unsuccessful.Plz Try Again........!"
-like_a_post(insta_username="sharmatanu9878")
+#like_a_post(insta_username="sharmatanu9878")

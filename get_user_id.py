@@ -1,6 +1,6 @@
 import requests
 from constants import APP_ACCESS_TOKEN,BASE_URL
-insta_username = "juhi2494"
+#insta_username = "sharmatanu9878"
 def get_user_id(insta_username):
     #function logic Here
     request_url=(BASE_URL +'users/search?q=%s&access_token=%s')%(insta_username,APP_ACCESS_TOKEN)
@@ -15,4 +15,4 @@ def get_user_id(insta_username):
     else:
         print 'status code other then 200 received'
         exit()
-get_user_id(insta_username)
+#get_user_id(insta_username="sharmatanu9878")
