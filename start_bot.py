@@ -11,8 +11,9 @@ def start_bot():
         print "4.Get the recent post of a user by username\n"
         print "5.Like the recent post of a user\n"
         print "6.Make a comment on the recent post of a user\n"
-        print "7.Delete negative comments from the recent post of a user\n"
-        print "8.Exit"
+        print "7.Get a list of comments on the recent post of a user\n"
+        print "8.Delete negative comments from the recent post of a user\n"
+        print "9.Exit"
         choice = raw_input("Enter your choice: ")
         if choice == "1":
             self_info()
