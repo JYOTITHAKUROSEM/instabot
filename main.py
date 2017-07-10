@@ -27,3 +27,4 @@ from post_a_comment import post_a_comment
 from delete_negative_comment import delete_negative_comment
 # Delete  the user neagtive comment automatically but it understood only english language if you type bad cooment in hindi then it doesnot remove these comment.
 from list_of_comments import comment_list
+from like_list import list_a_like

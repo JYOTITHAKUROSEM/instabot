@@ -11,9 +11,10 @@ def start_bot():
         print "4.Get the recent post of a user by username\n"
         print "5.Like the recent post of a user\n"
         print "6.Make a comment on the recent post of a user\n"
-        print "7.Get a list of comments on the recent post of a user\n"
-        print "8.Delete negative comments from the recent post of a user\n"
-        print "9.Exit"
+        print "7.Get a list of like on the recent post of the user\n"
+        print "8.Get a list of comments on the recent post of a user\n"
+        print "9.Delete negative comments from the recent post of a user\n"
+        print "10.Exit"
         choice = raw_input("Enter your choice: ")
         if choice == "1":
             self_info()
@@ -28,13 +29,19 @@ def start_bot():
         elif choice=="5":
             insta_username = raw_input("Enter the username of the user: ")
             like_a_post(insta_username)
-        elif choice=="6":
+        elif choice == "6":
             insta_username = raw_input("Enter the username of the user: ")
             post_a_comment(insta_username)
         elif choice=="7":
+            insta_username = raw_input("Enter the username of the user: ")
+            post_a_comment(insta_username)
+        elif choice == "8":
+            insta_username = raw_input("Enter the username of the user: ")
+            list_a_like(insta_username)
+        elif choice=="9":
            insta_username = raw_input("Enter the username of the user: ")
            delete_negative_comment(insta_username)
-        elif choice == "8":
+        elif choice == "10":
             exit()
         else:
              print "Your choose wrong choice plz choose again......."
