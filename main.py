@@ -30,6 +30,7 @@ from list_of_comments import comment_list
 #comments  of like
 from like_list import list_a_like
 # like list
+from hashtag import analyse_user
 while True:
     print '\n'
     print 'Hey! Welcome to InstaBot!'
@@ -43,7 +44,8 @@ while True:
     print "7.Get a list of like on the recent post of the user\n"
     print "8.Get a list of comments on the recent post of a user\n"
     print "9.Delete negative comments from the recent post of a user\n"
-    print "10.Exit"
+    print "10.User Interest On the basis of user post"
+    print "11.Exit"
     choice = raw_input("Enter your choice: ")
     if choice == "1":
         self_info()
@@ -68,9 +70,12 @@ while True:
         insta_username = raw_input("Enter the username of the user: ")
         comment_list(insta_username)
     elif choice == "9":
-        insta_username = raw_input("Enter the username of the user: ")
+        insta_username = raw_input("Enter the user id: ")
         delete_negative_comment(insta_username)
     elif choice == "10":
+        insta_username = raw_input("Enter the user name: ")
+        analyse_user(get_user_id(insta_username))
+    elif choice == "11":
         exit()
     else:
         print "Your choose wrong choice plz choose again......."

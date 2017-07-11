@@ -15,4 +15,4 @@ def get_user_id(insta_username):
     else:
         print 'status code other then 200 received'
         exit()
-#get_user_id(insta_username="sharmatanu9878")
+#get_user_id(insta_username="vikasraj7027")

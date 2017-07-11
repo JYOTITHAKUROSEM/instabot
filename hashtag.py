@@ -6,9 +6,10 @@ import requests
 def analyse_user(user_id):
     request_url = BASE_URL + "users/%s/media/recent/?access_token=%s" %(user_id, APP_ACCESS_TOKEN)
     print "Getting information from: %s" %(request_url)
-    interests = {'sleeping':4,'eating':10}
-    print interests
+    interests = {'health':4,'sleeping':10}
+    #print interests
     response = requests.get(request_url).json()
+    print response
     if response['meta']['code'] == 200:
         if len(response['data']) > 0:
             for index in range(0, len(response['data'])):
@@ -29,4 +30,4 @@ def analyse_user(user_id):
             print "No posts to show"
     else:
         print "Error: Not 200"
-analyse_user(5684266277)
+#analyse_user(5684266277)

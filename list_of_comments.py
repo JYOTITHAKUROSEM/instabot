@@ -20,4 +20,4 @@ def comment_list(insta_username):
                    print 'Negative comment : %s'%(comment_text)
                else:
                    print "Positive comment : %s\n" % (comment_text)
-#comment_list(insta_username="sharmatanu9878")
+#comment_list(insta_username="vikasraj7027")
