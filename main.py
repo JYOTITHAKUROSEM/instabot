@@ -27,4 +27,50 @@ from post_a_comment import post_a_comment
 from delete_negative_comment import delete_negative_comment
 # Delete  the user neagtive comment automatically but it understood only english language if you type bad cooment in hindi then it doesnot remove these comment.
 from list_of_comments import comment_list
+#comments  of like
 from like_list import list_a_like
+# like list
+while True:
+    print '\n'
+    print 'Hey! Welcome to InstaBot!'
+    print 'choose menu options:'
+    print "1.Get your own details\n"
+    print "2.Get details of a user by username\n"
+    print "3.Get your own recent post\n"
+    print "4.Get the recent post of a user by username\n"
+    print "5.Like the recent post of a user\n"
+    print "6.Make a comment on the recent post of a user\n"
+    print "7.Get a list of like on the recent post of the user\n"
+    print "8.Get a list of comments on the recent post of a user\n"
+    print "9.Delete negative comments from the recent post of a user\n"
+    print "10.Exit"
+    choice = raw_input("Enter your choice: ")
+    if choice == "1":
+        self_info()
+    elif choice == "2":
+        insta_username = raw_input("Enter the username of the user: ")
+        get_user_info(insta_username)
+    elif choice == "3":
+        get_own_post()
+    elif choice == "4":
+        insta_username = raw_input("Enter the username of the user: ")
+        get_user_post(insta_username)
+    elif choice == "5":
+        insta_username = raw_input("Enter the username of the user: ")
+        like_a_post(insta_username)
+    elif choice == "6":
+        insta_username = raw_input("Enter the username of the user: ")
+        post_a_comment(insta_username)
+    elif choice == "7":
+        insta_username = raw_input("Enter the username of the user: ")
+        list_a_like(insta_username)
+    elif choice == "8":
+        insta_username = raw_input("Enter the username of the user: ")
+        comment_list(insta_username)
+    elif choice == "9":
+        insta_username = raw_input("Enter the username of the user: ")
+        delete_negative_comment(insta_username)
+    elif choice == "10":
+        exit()
+    else:
+        print "Your choose wrong choice plz choose again......."
