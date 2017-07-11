@@ -70,7 +70,7 @@ while True:
         insta_username = raw_input("Enter the username of the user: ")
         comment_list(insta_username)
     elif choice == "9":
-        insta_username = raw_input("Enter the user id: ")
+        insta_username = raw_input("Enter the user name: ")
         delete_negative_comment(insta_username)
     elif choice == "10":
         insta_username = raw_input("Enter the user name: ")
