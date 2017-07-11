@@ -6,8 +6,9 @@ import requests
 def analyse_user(user_id):
     request_url = BASE_URL + "users/%s/media/recent/?access_token=%s" %(user_id, APP_ACCESS_TOKEN)
     print "Getting information from: %s" %(request_url)
-    interests = {'health':4,'sleeping':10}
+   # interests = {'health':4,'sleeping':10}
     #print interests
+    interests ={}
     response = requests.get(request_url).json()
     print response
     if response['meta']['code'] == 200:
